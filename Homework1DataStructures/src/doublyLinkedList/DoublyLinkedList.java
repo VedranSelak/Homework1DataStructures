@@ -1,14 +1,14 @@
-package doubleLinkedList;
+package doublyLinkedList;
 
 import java.util.Iterator;
 
-public class DoubleLinkedList<Item> implements Iterable<Item>{
+public class DoublyLinkedList<Item> implements Iterable<Item>{
 	
 	private Node<Item> head;
 	private Node<Item> tail;
 	private int size;
 	
-	public DoubleLinkedList() {
+	public DoublyLinkedList() {
 		this.head = this.tail = null;
 		this.size = 0;
 	}
@@ -68,10 +68,10 @@ public class DoubleLinkedList<Item> implements Iterable<Item>{
 	}
 	
 	public Iterator<Item> iterator() {
-	    return new DoubleLinkedListIterator();
+	    return new DoublyLinkedListIterator();
 	}
 	 
-	private class DoubleLinkedListIterator implements Iterator<Item> {        
+	private class DoublyLinkedListIterator implements Iterator<Item> {        
 		Node<Item> current = head;                                      
 	        
 	    public boolean hasNext() {                                      

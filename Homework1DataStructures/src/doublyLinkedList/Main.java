@@ -1,10 +1,10 @@
-package doubleLinkedList;
+package doublyLinkedList;
 
 public class Main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		DoubleLinkedList<String> list = new DoubleLinkedList<String>();
+		DoublyLinkedList<String> list = new DoublyLinkedList<String>();
 		list.addToRear("veka");
 		list.addToRear("sara");
 		list.addToRear("naim");
@@ -13,10 +13,8 @@ public class Main {
 		
 		list.removeFromFront();
 		list.removeFromRear();
+		list.removeFromRear();
 		list.removeFromFront();
-		list.removeFromFront();
-		list.removeFromFront();
-	
 		
 		for(String name : list) {
 			System.out.println(name);
