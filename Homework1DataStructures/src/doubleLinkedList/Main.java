@@ -11,8 +11,17 @@ public class Main {
 		list.addToRear("elda");
 		list.addToFront("ilma");
 		
+		list.removeFromFront();
+		list.removeFromRear();
+		list.removeFromFront();
+		list.removeFromFront();
+		list.removeFromFront();
+	
 		
-		list.print();
+		for(String name : list) {
+			System.out.println(name);
+		}
+		System.out.println(list.count());
 	}
 
 }
